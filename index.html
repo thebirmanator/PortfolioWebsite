@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=KoHo' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <title>TheBirmanator's Portfolio</title>
+    </head>
+    <body>
+        <img id="headimg" src="snek.png" alt="Sneaky Minecraft Man">
+        <ul id="navbar">
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#footer">Links</a></li>
+            <li id="contactme">
+                <a class="active" href="#contact">Contact Me</a>
+
+                <div id="contactModal">
+                        <div class="content">
+                            <h1>Thank You For Your Interest</h1>
+                            <p>Methods of Contact</p>
+                            <ul>
+                                <li><img src="email.png" alt="Email icon">Email: <span>birman.girl@att.net</span></li>
+                                <li><img src="discord.png" alt="Discord icon">Discord: <span>@TheBirmanator#8968</span></li>
+                            </ul>
+                            <p style="font-size: 0.9em">Please give me 24 hours to respond, due to my busy life and timezones.</p>
+                        </div>
+                    </div>
+            </li>
+        </ul>
+
+        <div class="section" id="welcome">
+            <div class="content">
+                <h1>Welcome!</h1>
+                <p>Hello! My name is TheBirmanator, and welcome to my portfolio website. I showcase all of my most significant, large, complex, or interesting projects 
+                    here for the world to see. Whether you are a casual computer clicker, who&#39;s here simply to take a peek, or an important business(wo)man looking for a competent programmer, 
+                    I hope you enjoy your stay.
+                </p>
+                <p>For real though, I am trying to make a decent living off of my passion. If you are here looking to commission, look no further for that contact button, 
+                    or continue scrolling to view my wonderful work.
+                </p>
+            </div>
+            <div class="extra">
+                <img id="profilepic" src="brem.jpg" alt="TheBirmanator's Profile Picture">
+            </div>
+        </div>
+
+        <div class="section" id="projects">
+            <div class="extra">
+                <ul id="projectlist">
+                    <li class="modalButton" onclick="showModal(this)">
+                        <img src="project1.png" alt="Project 1">
+                        <h3>Paintball</h3>
+                        <p>All custom minigame for a Minecraft server</p>
+
+                        <!--Modal that opens when you click on it-->
+                        <div class="projectModal">
+                            <div class="content">
+                                <img src="project1.png" alt="Project 1">
+                                <h3>Paintball</h3>
+                                <p>Paintball is my largest project to date. It is a minigame used for our server, 
+                                    and was started in May of 2018. It has its own custom events and listeners, scoreboards, and custom configuration files. 
+                                    It is meant to be completely user-friendly; owners can configure and use this plugin without having any knowledge of how it works, 
+                                    and it&#39;s meant to handle exceptions gracefully. It has also grown a lot from staff and player feedback, which is why it&#39;s still being updated to this day.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="modalButton" onclick="showModal(this)">
+                        <img src="project2.png" alt="Project 2">
+                        <h3>MythMania</h3>
+                        <p>Simulate spooky myths in Minecraft!</p>
+
+                        <!--Modal that opens when you click on it-->
+                        <div class="projectModal">
+                            <div class="content">
+                                <img src="project2.png" alt="Project 2">
+                                <h3>MythMania</h3>
+                                <p>This is my most technical project, using my most advanced knowledge of Java. It is meant for people to easily add onto it. 
+                                    Want to make a new myth appear in the game? This plugin is designed to do that with just a couple new classes; it handles everything else! 
+                                    It&#39;s also designed for public use, so anyone who doesn&#39;t know how to program can easily configure it and use its commands.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="modalButton" onclick="showModal(this)">
+                        <img src="project3.png" alt="Project 3">
+                        <h3>Portfolio</h3>
+                        <p>The very website you&#39;re looking at</p>
+
+                        <!--Modal that opens when you click on it-->
+                        <div class="projectModal">
+                            <div class="content">
+                                <img src="project3.png" alt="Project 3">
+                                <h3>Project 3 Here</h3>
+                                <p>This is my first real HTML/CSS project. Before, I had only done a few small websites in school that never went live. 
+                                    I&#39;ve been wanting to expand my horizons from Java, and web development seems very useful and interesting. 
+                                    I&#39;ve picked up many new things that were never touched upon in school, especially with divs, and I&#39;ve even gotten to integrate some JavaScript in there. 
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>Notable Projects</h1>
+                <p>Here, you can see the work I&#39;ve done over the past year and continue to update!</p>
+                <p>In the time I&#39;ve been programming, I&#39;ve spent the most time with Java, since it is used in the development of Minecraft plugins. 
+                    However, I&#39;ve also done some Python, HTML, CSS, and JavaScript in school, as well as for this website(except Python).</p>
+                <p>In any languages, I&#39;ve picked up some useful knowledge that goes beyond one, such as how computers read code from top to bottom, 
+                    and jump around only when specifically told to, how for loops repeat code multiple times, and how annoying it is when I accidentally create an infinite while loop. 
+                    However, the most important lesson I&#39;ve learnt in programming is that most tasks can be done many ways. One of the most satisfying points of programming is finding 
+                    the best way to do what I want, especially when it isn&#39;t my first idea, or when it leads into learning something new in the language. As a young adult trying to find 
+                    her way in the world, I also think about this when I&#39;m not sure how to go about something, or if I&#39;m afraid of doing it “wrong.”</p>
+                <p>This aspiration to find better ways to complete tasks has led to many projects, which you can see and enjoy below!</p>
+            </div>
+        </div>
+
+        <div class="section" id="aboutme">
+                <div class="content">
+                    <h1>About Me</h1>
+                    <p>I am a 19 year old aspiring developer who got her true start in Minecraft. Though I did some programming and computer science classes in high school, 
+                        I did not realise my passion until I started creating Minecraft plugins with a few friends, and eventually started to use and create more for a server with players, 
+                        who would see and use them. 
+                    </p>
+                    <p>Knowing my passion lies in the computer sciences and that Minecraft won&#39;t live forever, at least in the state it&#39;s in right now, 
+                        I&#39;ve decided to expand my knowledge and practice new languages, or ones I haven&#39;t worked with in a while. 
+                    </p>
+                    <p>Right now, programming is just a passion that hasn&#39;t taken off yet, so I work at Subway to make a living. 
+                        Though it is a menial job that I hope to get out of this year, it has taught me valuable social lessons, such as how to deal with irritated customers or unhappy bosses, 
+                        which cause a great deal of stress, and how to interact with people in a polite manner and create light conversation. 
+                    </p>
+                    <p>I also have many interests outside of my work life. I enjoy studying Japanese and language in general because it fascinates me how different cultures construct the same thoughts, 
+                        ideas, and words differently. I also exercise at the gym regularly to keep my body in shape, and I take interest in writing my own fictional novel and singing.
+                    </p>
+                </div>
+                <div class="extra">
+                    
+                    <div class="image">
+                        <img src="house.png" alt="My best build to date">
+                        <div id="fastfacts">
+                            
+                            <ul>
+                                <p>Fast Facts</p>
+                                <li>Age: 19</li>
+                                <li>Place of birth: California, USA</li>
+                                <li>Interests: language, writing, health, video games</li>
+                                <li>Favourite food: lobster</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div id="footer">
+            <a style="padding-top: 2em" href="#projects">Projects</a>
+            <a href="#link">Social Media</a>
+            <p>Copyright 2019 Dorine Andrade</p>
+        </div>
+
+        <script>
+            window.onclick = function(event) {
+                if(event.target == document.getElementById("contactModal")) { // clicked off the contactme modal
+                    document.getElementById("contactModal").style.display = "none";
+                } else if(document.getElementById("contactme").contains(event.target)) { // clicked the contact me button
+                    document.getElementById("contactModal").style.display = "block";
+                } else { // close the modal if user clicks outside of it
+                    var modals = document.getElementsByClassName("projectModal");
+                    for(var i = 0; i < modals.length; i++) {
+                        if(modals[i] == event.target) {
+                            modals[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+            
+            // show a modal for the corresponding clicked on box
+            function showModal(modalButton) {
+                var modalButtons = document.getElementsByClassName("modalButton");
+                for(var i = 0; i < modalButtons.length; i++) {
+                    if(modalButtons[i] == modalButton) {
+                        var modal = document.getElementsByClassName("projectModal")[i];
+                        modal.style.display = "block";
+                    }
+                }
+            }
+
+            // show the hidden fast facts when mousing over the profile image (and hide them otherwise)
+            window.onmouseover = function(event) {
+                var div = document.getElementById("fastfacts");
+                var image = document.getElementById("aboutme").getElementsByClassName("image")[0];
+                if(image.getElementsByTagName("img")[0] == event.target || div.contains(event.target)) {
+                    image.getElementsByTagName("img")[0].style.zIndex = 0;
+                } else {
+                    image.getElementsByTagName("img")[0].style.zIndex = 1;
+                }
+            }
+            
+        </script>
+    </body>
+</html>
