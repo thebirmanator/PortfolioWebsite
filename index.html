@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="assets/styles.css">
         <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=KoHo' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
         <title>TheBirmanator's Portfolio</title>
     </head>
     <body>
-        <img id="headimg" src="snek.png" alt="Sneaky Minecraft Man">
+        <!--<img id="headimg" src="banner.jpg" alt="Banner">-->
+        <div id="banner"></div>
         <ul id="navbar">
             <li><a href="#welcome">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#footer">Links</a></li>
+            <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
             <li id="contactme">
                 <a class="active" href="#contact">Contact Me</a>
-
-                <div id="contactModal">
-                        <div class="content">
-                            <h1>Thank You For Your Interest</h1>
-                            <p>Methods of Contact</p>
-                            <ul>
-                                <li><img src="email.png" alt="Email icon">Email: <span>birman.girl@att.net</span></li>
-                                <li><img src="discord.png" alt="Discord icon">Discord: <span>@TheBirmanator#8968</span></li>
-                            </ul>
-                            <p style="font-size: 0.9em">Please give me 24 hours to respond, due to my busy life and timezones.</p>
-                        </div>
-                    </div>
             </li>
         </ul>
+
+        <div id="contactModal" style="overflow: visible">
+            <div class="content">
+                <h1>Thank You For Your Interest</h1>
+                <p>Methods of Contact</p>
+                <ul>
+                    <li><img src="assets/images/email.png" alt="Email icon">Email: <span>birman.girl@att.net</span></li>
+                    <li><img src="assets/images/discord.png" alt="Discord icon">Discord: <span>@TheBirmanator#8968</span></li>
+                </ul>
+                <p style="font-size: 0.9em">Please give me 24 hours to respond, due to my busy life and timezones.</p>
+            </div>
+        </div>
 
         <div class="section" id="welcome">
             <div class="content">
@@ -45,7 +47,7 @@
                 </p>
             </div>
             <div class="extra">
-                <img id="profilepic" src="brem.jpg" alt="TheBirmanator's Profile Picture">
+                <img id="profilepic" src="assets/images/Brem.png" alt="TheBirmanator's Profile Picture">
             </div>
         </div>
 
@@ -53,15 +55,16 @@
             <div class="extra">
                 <ul id="projectlist">
                     <li class="modalButton" onclick="showModal(this)">
-                        <img src="project1.png" alt="Project 1">
+                        <img src="assets/images/paintball1.png" alt="Paintball Logo">
                         <h3>Paintball</h3>
                         <p>All custom minigame for a Minecraft server</p>
 
                         <!--Modal that opens when you click on it-->
                         <div class="projectModal">
                             <div class="content">
-                                <img src="project1.png" alt="Project 1">
+                                <img src="assets/images/paintball.png" alt="Paintball Logo">
                                 <h3>Paintball</h3>
+                                <a class="sourcecode" target="_blank" href="https://gitlab.com/darkscorner/paintball">Source Code</a>
                                 <p>Paintball is my largest project to date. It is a minigame used for our server, 
                                     and was started in May of 2018. It has its own custom events and listeners, scoreboards, and custom configuration files. 
                                     It is meant to be completely user-friendly; owners can configure and use this plugin without having any knowledge of how it works, 
@@ -72,33 +75,35 @@
                     </li>
                     
                     <li class="modalButton" onclick="showModal(this)">
-                        <img src="project2.png" alt="Project 2">
-                        <h3>MythMania</h3>
-                        <p>Simulate spooky myths in Minecraft!</p>
+                        <img src="assets/images/communitybot.png" alt="Community Bot">
+                        <h3>Indigo Community</h3>
+                        <p>Staff application management within Discord!</p>
 
                         <!--Modal that opens when you click on it-->
                         <div class="projectModal">
                             <div class="content">
-                                <img src="project2.png" alt="Project 2">
-                                <h3>MythMania</h3>
-                                <p>This is my most technical project, using my most advanced knowledge of Java. It is meant for people to easily add onto it. 
-                                    Want to make a new myth appear in the game? This plugin is designed to do that with just a couple new classes; it handles everything else! 
-                                    It&#39;s also designed for public use, so anyone who doesn&#39;t know how to program can easily configure it and use its commands.
+                                <img src="assets/images/communitybot.png" alt="Community Bot">
+                                <h3>Indigo Community</h3>
+                                <a class="sourcecode" target="_blank" href="https://gitlab.com/darkscorner/community-bot">Source Code</a>
+                                <p>This is my first Discord bot for Indigo Games. It allows members to apply for moderator, builder, or make appeals,
+                                    all within Discord. I wrote it in a language I didn&#39;t previously know, NodeJS. It 
+                                    is constantly being improved as I learn more of the language!
                                 </p>
                             </div>
                         </div>
                     </li>
                     
                     <li class="modalButton" onclick="showModal(this)">
-                        <img src="project3.png" alt="Project 3">
+                        <img src="assets/images/portfolio.png" alt="Portfolio">
                         <h3>Portfolio</h3>
                         <p>The very website you&#39;re looking at</p>
 
                         <!--Modal that opens when you click on it-->
                         <div class="projectModal">
                             <div class="content">
-                                <img src="project3.png" alt="Project 3">
-                                <h3>Project 3 Here</h3>
+                                <img src="assets/images/portfolio.png" alt="Portfolio">
+                                <h3>Portfolio</h3>
+                                <a class="sourcecode" target="_blank" href="https://gitlab.com/thebirmanator/portfolio">Source Code</a>
                                 <p>This is my first real HTML/CSS project. Before, I had only done a few small websites in school that never went live. 
                                     I&#39;ve been wanting to expand my horizons from Java, and web development seems very useful and interesting. 
                                     I&#39;ve picked up many new things that were never touched upon in school, especially with divs, and I&#39;ve even gotten to integrate some JavaScript in there. 
@@ -109,7 +114,7 @@
                 </ul>
             </div>
             <div class="content">
-                <h1>Notable Projects</h1>
+                <h1>Projects</h1>
                 <p>Here, you can see the work I&#39;ve done over the past year and continue to update!</p>
                 <p>In the time I&#39;ve been programming, I&#39;ve spent the most time with Java, since it is used in the development of Minecraft plugins. 
                     However, I&#39;ve also done some Python, HTML, CSS, and JavaScript in school, as well as for this website(except Python).</p>
@@ -117,7 +122,7 @@
                     and jump around only when specifically told to, how for loops repeat code multiple times, and how annoying it is when I accidentally create an infinite while loop. 
                     However, the most important lesson I&#39;ve learnt in programming is that most tasks can be done many ways. One of the most satisfying points of programming is finding 
                     the best way to do what I want, especially when it isn&#39;t my first idea, or when it leads into learning something new in the language. As a young adult trying to find 
-                    her way in the world, I also think about this when I&#39;m not sure how to go about something, or if I&#39;m afraid of doing it “wrong.”</p>
+                    her way in the world, I also think about this when I&#39;m not sure how to go about something, or if I&#39;m afraid of doing it &#34;wrong.&#34;</p>
                 <p>This aspiration to find better ways to complete tasks has led to many projects, which you can see and enjoy below!</p>
             </div>
         </div>
@@ -145,7 +150,6 @@
                     <div class="image">
                         <img src="house.png" alt="My best build to date">
                         <div id="fastfacts">
-                            
                             <ul>
                                 <p>Fast Facts</p>
                                 <li>Age: 19</li>
@@ -153,22 +157,105 @@
                                 <li>Interests: language, writing, health, video games</li>
                                 <li>Favourite food: lobster</li>
                             </ul>
-                            
                         </div>
                     </div>
                 </div>
         </div>
 
+        <div id="biography" class="dropdown">
+            <h1>Biography</h1>
+            <p>When I was 16 years old, I was a hapless teenager with no direction, goals, motivation, or aspirations for my future despite having a 4.0 GPA. 
+                When it came to choose electives for 11th grade, I was clueless. After all, I didn&#39;t have any interests that aligned with the class catalogue. 
+                So, after taking it home and showing my dad, he suggested that I take a computer science class, since I had a knack for computer software and 
+                enjoyed playing video games. I didn&#39;t see anything to lose, so I decided to try it. 
+            </p>
+            <p>I signed up for a beginner-level class that allowed students to interact with many aspects of a computer. It showed us the basics of 
+                everything from hardware to Photoshop to programming, which was the best unit for me. We started with an introduction to the concepts 
+                of programming using a simple block system called Scratch, where I excelled and created programs much more complex than everyone else&#39;s. 
+                Then we moved to JavaScript on Khan Academy, whose lessons I completed so quickly, the teacher asked that I helped struggling students in 
+                the extra time. After JavaScript, we moved onto HTML and CSS, and I was impressed and inspired by the webpages in front of me that I created. 
+                Even though they were never actually on the Internet, I was amazed at what I could create in a few weeks of learning. By the end of the year, 
+                I knew that I wanted to take a programming class the following year. The only problem I had in that class was with other students; 
+                I was one of three girls in the class, and I felt like either I cared way too much about the assigned work or they cared too little. 
+                However, I had a lot of trouble with that in school anyways, and decided to go ahead with the next year in programming, since I 
+                genuinely enjoyed the content. 
+            </p>
+            <p>The next year came around, and we learned two languages in that class, JavaScript and Python. We used an online academy called CodeHS, 
+                whose lessons I completed quickly, just like in the previous year on Khan Academy. By the time I finished the courses for both languages, 
+                I had nearly half a semester with nothing to do, so my teacher decided to put me in her other online course for her advanced placement students, 
+                who were learning Java. She assured me that I would be fine despite starting so late in the year, and I started the classes. 
+                By the end of the year, I had gone far enough into the Java course to where she decided to have me take the final exam on Java instead of Python, 
+                which is what the rest of my original class took. To our delight, I did more than passed! Even though I left school still without knowing what 
+                I wanted to do, I knew I found something I was good at that wasn&#39;t a core subject.
+            </p>
+            <p>Meanwhile at home, I had discovered a game which would come to change my life, Minecraft. I started playing the winter I took the first 
+                computer science class (2015). At first, I simply played the basic, vanilla survival. However, I soon took an interest in adventure maps, 
+                which were community-made maps that I could download, place into my world saves, and play. They would guide the player along using special 
+                blocks called command blocks. These blocks could summon creatures, send messages, teleport the player, and various other things that 
+                manipulated how the game worked. After playing an adventure map, I would go behind the scenes, find the command blocks, open them up, 
+                and try to figure out what was going on, usually with no success. Then one day, a video on YouTube appeared in my recommended section. 
+                It was a video on how to create armour stand statues using commands. I was amazed by the complex command used and followed the tutorial 
+                to make it myself. When it worked, I knew I had to make more, and soon I had a world filled with randomly posed statues. However, 
+                it wasn&#39;t enough. I wanted to make these move. I wanted particle effects surrounding them. I wanted to use creatures, and I wanted 
+                these creatures to have special behaviours, different from their vanilla, survival counterparts. More YouTube videos showed me how to 
+                change all of these, and a couple months later, I was making complex cloning labs, custom armour that gave special effects depending on 
+                if you were wearing it, and possessing creatures through AI manipulation and teleportation. I really enjoyed creating command block contraptions 
+                in my free time. However, there was never anybody to play with, as I was always in singleplayer.
+            </p>
+            <p>Months after my first glance at command blocks, I joined my first server that I would stay on. Servers made me nervous, since many were very 
+                different from the vanilla game I knew. However, a small YouTuber (Dark Corners, who would blow up later) announced that he was going to 
+                make his own server, which I joined, enticed by his content and the idea of meeting other fans. I played on there for the first couple 
+                days and made a few friends. However, as it turns out, vanilla gameplay doesn&#39;t do so well on multiplayer, and many troublemakers 
+                turned the beautiful world into a mess of craters, so the YouTuber accepted help from a small team of developers who added plugins on 
+                the third day. I was apprehensive -- the only times I encountered plugins were confusing and overwhelming -- but I stuck around for my friends. 
+                Over the next few days, I learned how to use the basics of the plugins so I could protect my own builds, earn money, and buy better items. 
+                Through learning, I became engaged with the server, and soon enough, I embraced the new plugins that added more things to do, 
+                such as quests and jobs. I helped others use the plugins, grew in the community, became a moderator, and moved up very quickly to admin, 
+                where I had to configure and maintain the plugins I once used and played with.
+            </p>
+            <p>I spent the summer of 2017, the summer I graduated in, managing this server as admin. Unfortunately, I had never run a server before 
+                and had no help. The developers were forcibly removed, and the people who came in to replace them had no experience. 
+                The server itself remained alive, but definitely not in its best state. It became laggy, no new content came out, and the console 
+                started spamming with errors. I had no idea how to fix any of it, though I did try and remove some plugins and change others to see if it 
+                would become less spammy. Meanwhile, people below me started drama of their own, and no one knew how to sort it out, including me.
+            </p>
+            <p>My time as admin was short-lived, lasting about three months, and I resigned due to inner staff conflicts. I was heartbroken leaving the 
+                community I once loved, but it definitely wasn&#39;t the end. I had gained knowledge in configuring plugins and, though I didn&#39;t 
+                find it very enjoyable, I did find a new curiosity in how these plugins worked. As fate would have it, a few of my friends, who had also 
+                gone through that server a couple months ago, needed another developer for their own project. Even though I had never created a Minecraft 
+                plugin, I knew the language that they were made in, Java. My friends knew this too and offered to take me on as a developer and show 
+                me how to make Minecraft plugins. I accepted.
+            </p>
+            <p>The first couple months were tough. I had to use an IDE called Eclipse, which I&#39;d never used. All of the programming I 
+                had done in the past was all in online editors, or Notepad++. On top of that, there were a few things that I had to memorise 
+                to start making a plugin, otherwise it wouldn&#39;t work: importing the Minecraft API into the IDE, creating a plugin.yml file, 
+                and having a main class with an onEnable() method. However, by the time a few months passed, I was able to reliably create them and make 
+                basic plugins that they used on their server. Then, after looking at some of my code, one of my friends suggested that I pick up object 
+                oriented programming, which is what I didn&#39;t understand in school. He showed me the basics, which were now surprisingly simple, 
+                and I used it and picked up more, which allowed me to create better, more complex plugins. Over time, we created many plugins for a 
+                few different servers, and I became better each time I made something. Unfortunately, none of them went anywhere, but in that time, 
+                I finally figured out that I had a passion for software development. After a few attempts at our own server, we decided to go back to 
+                the original server that I was admin on, but as developers, which the owner approved of. Even though it&#39;s stressful there, I do enjoy 
+                writing programs for others to use, and I especially enjoy doing it with close friends.
+            </p>
+            <p style="padding-bottom: 2.5em;">Thanks to my friends, Minecraft, and the DarksCorner community, I found my true passion as a programmer. 
+                I&#39;m ready to discover more and expand on my knowledge, and I hope to create a full game with those friends one day.
+            </p>
+            <div class="expand">
+                <p>Click to expand</p>
+            </div>
+        </div>
+
         <div id="footer">
-            <a style="padding-top: 2em" href="#projects">Projects</a>
-            <a href="#link">Social Media</a>
+            <a style="padding-left: 2em" href="https://twitter.com/the_birmanator" target="_blank"><img src="assets/images/twitter.png"></a>
+            <a href="https://github.com/thebirmanator" target="_blank"><img src="assets/images/github.png"></a>
             <p>Copyright 2019 Dorine Andrade</p>
         </div>
 
         <script>
             window.onclick = function(event) {
-                if(event.target == document.getElementById("contactModal")) { // clicked off the contactme modal
-                    document.getElementById("contactModal").style.display = "none";
+                if(document.getElementById("contactModal") == event.target) { // clicked off the contactme modal
+                    event.target.style.display = "none";
                 } else if(document.getElementById("contactme").contains(event.target)) { // clicked the contact me button
                     document.getElementById("contactModal").style.display = "block";
                 } else { // close the modal if user clicks outside of it
@@ -177,6 +264,17 @@
                         if(modals[i] == event.target) {
                             modals[i].style.display = "none";
                         }
+                    }
+                }
+
+                if(event.target.parentNode.className == "expand" || event.target.className == "expand") {
+                    var dropdiv = event.target.parentNode.parentNode;
+                    if(dropdiv.style.height == "250%") { // close it
+                        event.target.innerHTML = "Click to expand";
+                        dropdiv.style.height = "6em";
+                    } else { // open it
+                        event.target.innerHTML = "Click to shrink";
+                        dropdiv.style.height = "250%";
                     }
                 }
             }

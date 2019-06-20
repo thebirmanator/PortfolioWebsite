@@ -1,14 +1,68 @@
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
     margin: 0;
+    height: 100%;
 }
 
 #headimg {
     width: 100%;
     display: block;
+}
+
+#banner {
+    background-image: url("images/banner.jpg");
+    filter: blur(3px);
+    min-height: 722px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dropdown {
+    position: relative;
+    background-color: #333333;
+    margin: 0;
+    height: 6em;
+    overflow: hidden;
+}
+
+.dropdown h1, .dropdown p {
+    margin: 0;
+}
+
+.dropdown p {
+    padding-top: 2em;
+    padding: 2em 15% 0 15%;
+}
+
+.dropdown h1 {
+    font-family: 'Capriola';
+    color: rgb(255, 119, 203);
+    font-size: 3em;
+    text-align: center;
+}
+
+.expand {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.expand p {
+    color: cornsilk;
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
 }
 
 #navbar {
@@ -44,6 +98,12 @@ body {
 #contactme {
     float: right;
     background-color: rgb(255, 0, 106);
+}
+
+#contactModal {
+    position: fixed;
+    font-family: 'KoHo';
+    font-weight: bold;
 }
 
 #contactModal h1 {
@@ -83,14 +143,14 @@ body {
 }
 
 p {
-    font: bold 20px 'KoHo';
+    font: bold 1rem 'KoHo';
     color: rgb(182, 182, 182);
     padding: 0.5em;
 }
 
 .section {
     background-color: #333333;
-    height: 100%;
+    height: 120%;
     width: 100%;
     padding-bottom: 25%;
     display: flex;
@@ -179,6 +239,14 @@ p {
     margin: 0;
 }
 
+.sourcecode {
+    font-family: 'KoHo';
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+    color: rgb(255, 0, 106);
+}
+
 .modalButton p {
     text-align: center;
     padding: 0;
@@ -265,7 +333,7 @@ p {
     margin: 0.5em;
     color: rgb(255, 0, 106);
     text-align: center;
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
 }
 
 #fastfacts ul {
@@ -278,24 +346,33 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
     font-family: 'Capriola';
 }
 
 #footer {
+    padding: 0;
     height: 20%;
+    font-size: 0.8em;
     background-color: black;
 }
 
 #footer a {
+    padding: 0.5em;
+    padding-top: 2em;
+    margin: 0;
+    float: left;
     text-decoration: none;
     font-family: 'KoHo';
     color: cornsilk;
-    display: block;
-    padding: 10px 40px;
+}
+
+#footer img {
+    height: 2em;
 }
 
 #footer p {
+    clear: left;
     font-size: 0.8em;
-    padding: 10px 40px;
+    padding: 1.5em 25px;
 }
