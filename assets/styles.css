@@ -16,7 +16,8 @@ body {
 #banner {
     background-image: url("images/banner.jpg");
     filter: blur(3px);
-    min-height: 722px;
+    min-height: 75%;
+    /*722px*/
 
     background-attachment: fixed;
     background-position: center;
